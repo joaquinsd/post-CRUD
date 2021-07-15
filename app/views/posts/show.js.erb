@@ -1,0 +1,58 @@
+alert('<%= @post.title %> - <%= @post.content %>')
+
+// function fillPokemonModal(response, result){
+//   var modal = document.querySelector('#pokemon-modal')
+//   var modalTitle = document.querySelector('#pokemonModal')
+//   var regularPic = document.querySelector('#regular-sprite')
+//   var shinyPic = document.querySelector('#shiny-sprite')
+//   var mainModalBtn = document.querySelector('#close-modal')
+//   var ulType = document.querySelector('#types')
+//   var ulAbility = document.querySelector('#abilities')
+
+//   ulType.innerHTML =''
+//   ulAbility.innerHTML =''
+
+//   response.types.forEach(function(iterable){
+//     var li = document.createElement('li')
+//     li.className = 'col-2'
+//     var typeBtn = document.createElement('button')
+//     typeBtn.appendChild(document.createTextNode(capitalizeFirstLetter(iterable.type.name)))
+//     $(typeBtn).attr({'class': 'btn btn-success btn-sm','data-bs-toggle':'modal','data-bs-target':'#damage-data', 'data-damage': iterable.type.name})
+//     li.appendChild(typeBtn)
+//     ulType.appendChild(li)
+//   })
+
+//   response.abilities.forEach(function(iterable){
+//     var li = document.createElement('li')
+//     li.className = 'col-4'
+//     var abilityBtn = document.createElement('button')
+//     abilityBtn.appendChild(document.createTextNode('Other pokémon with this ability'))
+//     $(abilityBtn).attr({'class': 'btn btn-info btn-sm','data-bs-toggle':'modal','data-bs-target':'#ability-data', 'data-ability': iterable.ability.name})
+//     li.appendChild(document.createTextNode(capitalizeFirstLetter(iterable.ability.name)))
+//     li.appendChild(abilityBtn)
+//     ulAbility.appendChild(li)
+    
+//   })
+
+//   response.game_indices.forEach(function(iterable){
+//     var li = document.createElement('li')
+//     li.appendChild(document.createTextNode(capitalizeFirstLetter(iterable.version.name)))
+//     ulGens.appendChild(li)
+//   })
+
+//   response.moves.forEach(function(iterable, index){
+//     if(index < 5){
+//     var li = document.createElement('li')
+//     li.appendChild(document.createTextNode(capitalizeFirstLetter(iterable.move.name)))
+//     olMoves.appendChild(li)
+//     }
+//   })
+
+//   modalTitle.appendChild(document.createTextNode(capitalizeFirstLetter(result.name)))  
+//   regularPic.src = response.sprites.front_default
+//   shinyPic.src = response.sprites.front_shiny
+
+//   mainModalBtn.addEventListener('click', function(event){
+//     modal.style.display = 'none'
+//   })
+// }
